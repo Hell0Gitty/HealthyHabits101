@@ -1,0 +1,108 @@
+/* Custom styles for Healthy Habits 101 */
+
+/* Smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust body padding for fixed navbar */
+body {
+    padding-top: 76px;
+}
+
+/* Hero section styling */
+.hero-section {
+    background: linear-gradient(135deg, var(--bs-dark) 0%, var(--bs-secondary) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Section spacing */
+section {
+    min-height: 60vh;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon animations */
+.fa-heart {
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Tip card special styling */
+#daily-tip {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    
+    .hero-section {
+        min-height: 80vh;
+    }
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .card {
+    transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus, .card:focus {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary);
+}
