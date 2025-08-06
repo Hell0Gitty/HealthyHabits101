@@ -4,6 +4,10 @@
 
 Healthy Habits 101 is a wellness-focused static website built with pure HTML5, CSS, and JavaScript that provides users with comprehensive information and tips about maintaining healthy lifestyle habits. The application serves as an educational resource covering key areas of wellness including sleep, hydration, exercise, and stretching, presented through an intuitive single-page interface with smooth navigation and interactive features.
 
+## Recent Changes
+- **Server Configuration Fixed (August 6, 2025)**: Resolved workflow mismatch issue where Gunicorn was trying to start a Flask app, but the actual application is Node.js. Server now runs correctly on port 5000 via `node server.js`.
+- **Application Status**: Fully functional with all features working properly including navigation, daily tips, and interactive elements.
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
